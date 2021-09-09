@@ -1,0 +1,14 @@
+
+
+$colors :(
+  "blue": rgb(48, 48, 212),
+  "red": rgb(231, 47, 47),
+  "yellow": rgb(248, 248, 74), 
+);
+
+@each $key,$value in $colors {
+  .bg-#{$key}{
+    background-color: $value;
+  }
+
+}
